@@ -1,0 +1,6 @@
+{
+  "name": "NetSpectra",
+  "description": "منصة احترافية لمراقبة وتحليل وإدارة استهلاك الإنترنت والتحكم بالتطبيقات المتصلة بالشبكة",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
