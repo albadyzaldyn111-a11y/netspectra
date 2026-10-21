@@ -1,21 +1,36 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# NetSpectra
 
-# Run and deploy your AI Studio app
+NetSpectra is an Android network-usage monitoring and data-management application focused on practical visibility into device traffic and app-level consumption.
 
-This contains everything you need to run your app locally.
+## Project highlights
 
-View your app in AI Studio: https://ai.studio/apps/a79b7aee-1e76-4bf8-8b18-a24b46e20191
+- Android application built with Kotlin and Gradle.
+- Network traffic and data-usage monitoring foundations.
+- Per-application usage insights and configurable data limits.
+- Firewall and control-rule concepts for managing network access.
+- Reporting and notification foundations for data consumption.
 
-## Run Locally
+## Technology stack
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+- Kotlin
+- Android SDK
+- Gradle Kotlin DSL
+- Android platform networking and usage APIs
 
+## Getting started
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+Open the project in Android Studio, allow Gradle to sync, and run the `app` module on a compatible Android device or emulator.
+
+```bash
+git clone https://github.com/albadyzaldyn111-a11y/netspectra.git
+cd netspectra
+./gradlew assembleDebug
+```
+
+## Privacy and permissions
+
+Network and usage-monitoring features require explicit Android permissions and should be tested transparently on the target device. The project must not collect or transmit personal traffic data without clear user consent.
+
+## Status
+
+Active prototype and research project. Device and Android-version support may vary while the monitoring and control features continue to evolve.
